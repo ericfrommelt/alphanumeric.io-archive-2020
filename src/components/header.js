@@ -1,42 +1,48 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import React from 'react'
+import styled from '@emotion/styled'
+import { css } from '@emotion/core'
+import { Link } from 'gatsby'
+import Masthead from '../components/masthead'
 
-const Header = ({ siteTitle }) => (
+const NavLink = styled(Link)`
+  font-family: "Ringside Regular SSm A", "Ringside Regular SSm B", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #222;
+  font-size: .8rem;
+  line-height: 1;
+  margin: 0 0.5rem 0 0;
+  padding: 0.25rem;
+  /* text-transform: uppercase; */
+  text-decoration: none;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+`
+
+const Header = () => (
   <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
+    css={css`
+      margin: 3rem 0;
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5rem calc((100vw - 780px - 0.5rem) / 2);
+      align-items: center;
+    `}
   >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
+    <NavLink to='/'><Masthead></Masthead></NavLink>
+    <nav
+      css={css`
+        margin-top: 0;
+      `}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
+      <NavLink to='/' activeClassName="current-page">Home</NavLink>
+      <NavLink to='/about/' activeClassName="current-page">About</NavLink>
+      <NavLink to='/contact/' activeClassName="current-page">Contact</NavLink>
+    </nav>
   </header>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header
