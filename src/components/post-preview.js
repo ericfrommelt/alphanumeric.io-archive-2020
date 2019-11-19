@@ -7,8 +7,7 @@ import ReadLink from './read-link'
 const PostPreview = ({ post }) => (
   <article
     css={css`
-      border-bottom: 1px solid #ddd;
-      display: flex;
+      display: grid;
       margin-top: 0;
       padding-bottom: 1rem;
 
@@ -29,7 +28,11 @@ const PostPreview = ({ post }) => (
       />
     </Link>
     <div>
-      <h3><Link to={post.slug}>{post.title}</Link></h3>
+      <h3
+        css={css`
+          font-size: 3rem;
+        `}
+      ><Link to={post.slug}>{post.title}</Link></h3>
       <p>{post.excerpt}</p>
     </div>
   </article>
