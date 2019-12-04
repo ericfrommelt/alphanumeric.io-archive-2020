@@ -13,7 +13,6 @@ const NavLink = styled(Link)`
   line-height: 1;
   margin: 0 0.5rem 0 0;
   padding: 0.25rem;
-  /* text-transform: uppercase; */
   text-decoration: none;
   }
 
@@ -25,24 +24,12 @@ const NavLink = styled(Link)`
 const Header = () => (
   <header
     css={css`
-      margin: 3rem 0;
       display: flex;
       justify-content: space-between;
-      padding: 0.5rem calc((100vw - 780px - 0.5rem) / 2);
       align-items: center;
     `}
   >
-    <NavLink to='/'><Masthead></Masthead></NavLink>
-    <nav
-      css={css`
-        margin-top: 0;
-      `}
-    >
-      <NavLink to='/' activeClassName="current-page">Home</NavLink>
-      <NavLink to='/blog/' activeClassName="current-page">Blog</NavLink>
-      <NavLink to='/about/' activeClassName="current-page">About</NavLink>
-      <NavLink to='/contact/' activeClassName="current-page">Contact</NavLink>
-    </nav>
+    <Link to='/'><Masthead></Masthead></Link>
   </header>
 )
 
