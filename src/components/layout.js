@@ -16,6 +16,11 @@ const Layout = ({ children }) => {
             margin: 0;
           }
 
+          ::selection {
+            background-color: red;
+            color: white;
+          }
+
           a { 
             text-decoration: none;
             color: #000;
@@ -89,7 +94,7 @@ const Layout = ({ children }) => {
           <Header />
           <div 
             css={css`
-              height: 80vh;
+              height: 90vh;
               display: flex;
               flex-direction: column;
               justify-content: space-between;
@@ -99,7 +104,7 @@ const Layout = ({ children }) => {
                 css={css`
                   font-family: "Ringside Regular SSm A", "Ringside Regular SSm B", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                   font-size: .5rem;
-                  margin: 4rem 0 0 0;
+                  margin: 45vh 0 .5rem .1rem;
                   letter-spacing: .25rem;
                   text-transform: uppercase;
                   font-weight: 700;
@@ -109,24 +114,32 @@ const Layout = ({ children }) => {
                 css={css`
                   font-family: "Ringside Regular SSm A", "Ringside Regular SSm B", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                   font-size: 1.4rem;
-                  margin-left: -3px;
+                  margin-left: -2px;
                   margin-top: .6rem;
-                `}>Designer and developer.
+                  margin-bottom: 1rem;
+                `}>Designer and UX Engineer
               </h2>
+              <p css={css`
+                font-size: .8rem;
+                margin-bottom: 2rem;
+              `}>Storytelling at the intersection of design and development.</p>
             </div>
 
             <div class="wrap" 
               css={css`
               display: flex;
               `}>
-              <div>
+              <div css={css`
+                width: 25vw;
+              `}>
                 <h3
                   css={css`
                     font-family: "Ringside Regular SSm A", "Ringside Regular SSm B", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                    font-size: .7rem;
+                    font-size: .5rem;
                     letter-spacing: .25rem;
                     text-transform: uppercase;
                     font-weight: 700;
+                    margin-bottom: 1rem;
                   `}
                 >Skills</h3>
                 <ul
@@ -135,11 +148,77 @@ const Layout = ({ children }) => {
                     padding: 0;
                     font-size: .7rem;
                   `}>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
                   <li>Art Direction</li>
                   <li>Visual Design</li>
                   <li>Illustration</li>
                   <li>Motion Design</li>
-                  <li>HTML, CSS, JavaScript</li>
+                </ul>
+
+                <h3
+                  css={css`
+                    font-family: "Ringside Regular SSm A", "Ringside Regular SSm B", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    font-size: .5rem;
+                    letter-spacing: .25rem;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    margin-top: 2rem;
+                    margin-bottom: 1rem;
+                  `}
+                >Projects</h3>
+                <ul
+                  css={css`
+                    list-style-type: none;
+                    padding: 0;
+                    font-size: .7rem;
+                  `}>
+                  <li>ericfrommelt.com</li>
+                  <li>scenario74.com</li>
+                </ul>
+              </div>
+
+              <div css={css`
+                margin-left: 4rem;
+              `}>
+                <h3
+                  css={css`
+                    font-family: "Ringside Regular SSm A", "Ringside Regular SSm B", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    font-size: .5rem;
+                    letter-spacing: .25rem;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    margin-bottom: 1rem;
+                  `}
+                >About this site</h3>
+                <p css={css`
+                  font-size: .7rem;
+                  margin-bottom: 2rem;
+                `}>alphanumeric.io was designed in the browser with Visual Studio Code and the occasional foray into Sketch. Built with Gatsby + Emotion.</p>
+                <h3
+                  css={css`
+                    font-family: "Ringside Regular SSm A", "Ringside Regular SSm B", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    font-size: .5rem;
+                    letter-spacing: .25rem;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    margin-bottom: 1rem;
+                  `}
+                >Learning</h3>
+                <p css={css`
+                  font-size: .7rem;
+                `}>I'm currently focused on:</p>
+                <ul
+                css={css`
+                  list-style-type: none;
+                  padding: 0;
+                  font-size: .7rem;
+                `}>
+                  <li>JavaScript</li>
+                  <li>React</li>
+                  <li>Analog synthesizers</li>
+                  <li>Ableton</li>
                 </ul>
               </div>
             </div>

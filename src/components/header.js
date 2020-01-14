@@ -29,7 +29,7 @@ const Header = () => (
       align-items: center;
     `}
   >
-    <Link to='/'><Masthead></Masthead></Link>
+    {/* <Link to='/'><Masthead></Masthead></Link> */}
   </header>
 )
 
