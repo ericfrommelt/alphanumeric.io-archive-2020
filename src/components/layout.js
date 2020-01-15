@@ -2,7 +2,7 @@ import React from "react"
 import { Global, css } from '@emotion/core'
 import Helmet from 'react-helmet'
 import Header from './header'
-import useSitemetadata from '../hooks/use-Sitemetadata'
+import useSitemetadata from '../hooks/use-sitemetadata'
 
 const Layout = ({ children }) => {
   const { title, description } = useSitemetadata();
