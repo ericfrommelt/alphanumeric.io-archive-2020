@@ -9,8 +9,8 @@ export default () => {
 
   return (
     <>
+      <SEO title="Home" />
       <Layout>
-        <SEO title="Home" />
         <EditorialPortfolio />
         <MotionPortfolio />
         <IllustrationPortfolio />

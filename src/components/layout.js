@@ -148,6 +148,7 @@ const Layout = ({ children }) => {
                     padding: 0;
                     font-size: .7rem;
                   `}>
+                  <li>UX/UI Design</li>
                   <li>HTML</li>
                   <li>CSS</li>
                   <li>JavaScript</li>
