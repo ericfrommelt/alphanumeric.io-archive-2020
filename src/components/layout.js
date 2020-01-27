@@ -134,11 +134,10 @@ const Layout = ({ children }) => {
 
             <div class="wrap" 
               css={css`
-              display: flex;
+              display: grid;
+              grid-template-columns: auto auto;
               `}>
-              <div css={css`
-                width: 25vw;
-              `}>
+              <div>
                 <h3
                   css={css`
                     font-family: "Ringside Regular SSm A", "Ringside Regular SSm B", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -180,8 +179,10 @@ const Layout = ({ children }) => {
                     padding: 0;
                     font-size: .7rem;
                   `}>
-                  <li>ericfrommelt.com</li>
-                  <li>scenario74.com</li>
+                  <li><a href="http://www.ericfrommelt.com">ericfrommelt.com</a></li>
+                  <li css={css`
+                    text-decoration: line-through;
+                  `}>scenario74.com</li>
                 </ul>
               </div>
 
