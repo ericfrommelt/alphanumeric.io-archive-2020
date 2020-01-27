@@ -92,15 +92,7 @@ const Layout = ({ children }) => {
             padding: 2rem;
           `}
           >
-          <div 
-            css={css`
-              @media (min-width:820px) {
-                height: 80vh;
-              }
-              display: flex;
-              flex-direction: column;
-              justify-content: space-between;
-            `}>
+          <div>
             <div>
               <h3
                 css={css`
@@ -133,7 +125,7 @@ const Layout = ({ children }) => {
             <div class="wrap" 
               css={css`
               display: grid;
-              grid-template-columns: auto auto;
+              grid-template-columns: 10rem auto;
               `}>
               <div>
                 <h3
@@ -184,9 +176,7 @@ const Layout = ({ children }) => {
                 </ul>
               </div>
 
-              <div css={css`
-                margin-left: 4rem;
-              `}>
+              <div>
                 <h3
                   css={css`
                     font-family: "Ringside Regular SSm A", "Ringside Regular SSm B", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
