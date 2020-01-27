@@ -2,6 +2,7 @@ import React from 'react'
 import { css } from '@emotion/core'
 import WorkHPE from './work-hpe'
 import WorkWired from './work-wired'
+import WorkSamsung from './work-samsung'
 
 const EditorialPortfolio = () => {
   return (
@@ -11,13 +12,15 @@ const EditorialPortfolio = () => {
       grid-template-columns: repeat(12, 1fr);
     `}>
       <h3 css={css`
-        font-size: 16rem;
-        position: absolute;
-        margin-top: 8rem;
-        margin-left: -16rem;
+        font-size: 8rem;
+        grid-column: 1 / span 12;
+        margin: 4rem 0 4rem -4rem;
       `}>Editorial</h3>
       <WorkHPE></WorkHPE>
-      <WorkWired></WorkWired>
+      <WorkWired css={css`
+        margin-top: 8rem;
+      `}></WorkWired>
+      <WorkSamsung></WorkSamsung>
     </div>
   )
 }

@@ -44,7 +44,7 @@ const Layout = ({ children }) => {
               line-height: 1.1;
               font-family: "Quarto A", "Quarto B", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
               font-style: normal;
-              font-weight: 400;
+              font-weight: 700;
             }
 
               + * { 
@@ -122,7 +122,7 @@ const Layout = ({ children }) => {
               <p css={css`
                 font-size: .8rem;
                 margin-bottom: 2rem;
-              `}>Storytelling at the intersection of design and development.</p>
+              `}>Telling stories at the intersection of design and development.</p>
             </div>
 
             <div class="wrap" 
@@ -149,9 +149,7 @@ const Layout = ({ children }) => {
                     font-size: .7rem;
                   `}>
                   <li>UX/UI Design</li>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>JavaScript</li>
+                  <li>HTML/CSS/JS</li>
                   <li>Art Direction</li>
                   <li>Visual Design</li>
                   <li>Illustration</li>
@@ -196,7 +194,7 @@ const Layout = ({ children }) => {
                 <p css={css`
                   font-size: .7rem;
                   margin-bottom: 2rem;
-                `}>alphanumeric.io was designed in the browser with Visual Studio Code and the occasional foray into Sketch. Built with Gatsby + Emotion.</p>
+                `}>alphanumeric.io was designed in the browser with Visual Studio Code and the occasional foray into Sketch. Built with Gatsby.</p>
                 <h3
                   css={css`
                     font-family: "Ringside Regular SSm A", "Ringside Regular SSm B", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -236,7 +234,7 @@ const Layout = ({ children }) => {
           <section
           css={css`
             min-height: 100vh;
-            background: #ccc;
+            background: whitesmoke;
             color: black;
           `}>
           {children}

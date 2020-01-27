@@ -39,18 +39,6 @@ const WorkHPE = () => {
 
   return (
     <>
-      <h4 css={css`
-        font-family: "Ringside Regular SSm A", "Ringside Regular SSm B", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: .7rem;
-        letter-spacing: .25rem;
-        text-transform: uppercase;
-        font-weight: 700;
-        padding-top: 1rem;
-        min-height: 4rem;
-        margin: 30rem 0 0 0;
-        grid-column: 3;
-      `}>HPE</h4>
-
       {/* Cloud Cliff */}
       <div css={css`
         grid-column: 1 / span 10;

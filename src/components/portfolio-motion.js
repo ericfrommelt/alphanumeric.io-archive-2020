@@ -9,16 +9,15 @@ const MotionPortfolio = () => {
       grid-template-columns: repeat(12, 1fr);
     `}>
       <h3 css={css`
-        font-size: 20rem;
-        position: absolute;
-        margin-top: 8rem;
-        margin-left: 4rem;
+        font-size: 8rem;
+        grid-column: 1 / span 12;
+        margin: 4rem 0 4rem -4rem;
       `}>Motion</h3>
       <div css={css`
         overflow: hidden;
         padding-top: 56.25%;
         position: relative;
-        margin: 30rem 0 6rem 0;
+        margin: 0 0 6rem 0;
         grid-column: 1 / span 11;
       `}>
         <iframe css={css`

@@ -39,22 +39,22 @@ const WorkIllustration = () => {
 
   return (
     <>
+      {/* Pop Mech */}
       <div css={css`
-        grid-column: 1 / span 10;
+        grid-column: 2 / span 8;
         grid-row: 3;
         z-index: 20;
-        padding: 6rem 0 0 0;
-        margin: -2rem;
+        margin-top: 4rem;
       `}>
         <Img fluid={data.image1.sharp.fluid}></Img>
       </div>
 
+      {/* Quant Junkies */}
       <div css={css`
-        grid-column: 3 / span 10;
+        grid-column: 1 / span 10;
         grid-row: 2;
         z-index: 10;
         padding: 0; 
-        margin-top: 30rem;
       `}>
         <Img fluid={data.image2.sharp.fluid}></Img>
       </div>
@@ -74,7 +74,15 @@ const WorkIllustration = () => {
         padding: 6rem 0 0 0;
         margin: -2rem;
       `}>
-        <Img fluid={data.image4.sharp.fluid}></Img></div>
+        <Img fluid={data.image4.sharp.fluid}></Img>
+      </div>
+      <div css={css`
+        grid-column: 1 / span 10;
+        grid-row: 6;
+        margin-top: 4rem;
+      `}>
+       <a href="http://www.ericfrommelt.com">More...</a>
+      </div>
     </>
   )
 }
