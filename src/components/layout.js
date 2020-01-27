@@ -84,17 +84,21 @@ const Layout = ({ children }) => {
         {/* Left */}
         <div 
           css={css`
-            position: fixed;
+            @media (min-width:820px) {
+              position: fixed;
+              width: 50vw;
+              height: 100vh;
+            }
             background: #fff;
-            width: 50vw;
-            height: 100vh;
             padding: 2rem;
           `}
           >
           <Header />
           <div 
             css={css`
-              height: 90vh;
+              @media (min-width:820px) {
+                height: 80vh;
+              }
               display: flex;
               flex-direction: column;
               justify-content: space-between;
@@ -104,10 +108,13 @@ const Layout = ({ children }) => {
                 css={css`
                   font-family: "Ringside Regular SSm A", "Ringside Regular SSm B", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                   font-size: .5rem;
-                  margin: 45vh 0 .5rem .1rem;
                   letter-spacing: .25rem;
                   text-transform: uppercase;
                   font-weight: 700;
+
+                  @media (min-width:820px) {
+                    margin: 45vh 0 .5rem .1rem;
+                  }
                 `}
               >Eric Frommelt</h3>
               <h2 
@@ -227,9 +234,11 @@ const Layout = ({ children }) => {
         {/* Right */}
         <div 
           css={css`
-            width: 50vw;
+            @media (min-width:820px) {
+              width: 50vw;
+              margin-left: 50vw;
+            }
             margin-top: 0;
-            margin-left: 50vw;
           `}>
           <section
           css={css`

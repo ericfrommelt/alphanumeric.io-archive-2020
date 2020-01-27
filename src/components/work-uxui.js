@@ -6,7 +6,7 @@ import Img from "gatsby-image"
 const WorkUxUi = () => {
   const data = useStaticQuery(graphql`
     query {
-      image1: file(relativePath: { eq: "twcbcc.png" }) {
+      image1: file(relativePath: { eq: "twcbcc_stacked.png" }) {
         sharp: childImageSharp {
           fluid(maxWidth: 3000) {
             ...GatsbyImageSharpFluid_withWebp
@@ -37,7 +37,9 @@ const WorkUxUi = () => {
         grid-row: 3;
         z-index: 20;
         margin-top: 4rem;
-        margin-left: -40vw;
+        @media (min-width:820px) {
+          margin-left: -40vw;
+        }
       `}>
         <Img fluid={data.image1.sharp.fluid}></Img>
       </div>
@@ -46,7 +48,9 @@ const WorkUxUi = () => {
         grid-column: 1 / span 12;
         grid-row: 2;
         z-index: 10;
-        margin-left: -40vw;
+        @media (min-width:820px) {
+          margin-left: -40vw;
+        }
       `}>
         <Img fluid={data.image2.sharp.fluid}></Img>
       </div>
@@ -55,7 +59,9 @@ const WorkUxUi = () => {
         grid-column: 1 / span 12;
         grid-row: 4;
         padding: 6rem 0 0 0;
-        margin-left: -40vw;
+        @media (min-width:820px) {
+          margin-left: -40vw;
+        }
       `}>
         <Img fluid={data.image3.sharp.fluid}></Img>
       </div>

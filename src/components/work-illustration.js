@@ -63,7 +63,9 @@ const WorkIllustration = () => {
         grid-column: 1 / span 12;
         grid-row: 4;
         padding: 6rem 0 0 0;
-        margin-left: -10rem;
+        @media (min-width:820px) {
+          margin-left: -10rem;
+        }
       `}>
         <Img fluid={data.image3.sharp.fluid}></Img>
       </div>
@@ -81,7 +83,6 @@ const WorkIllustration = () => {
         grid-row: 6;
         margin-top: 4rem;
       `}>
-       <a href="http://www.ericfrommelt.com">More...</a>
       </div>
     </>
   )

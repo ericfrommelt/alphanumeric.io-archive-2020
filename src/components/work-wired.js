@@ -18,24 +18,13 @@ const WorkWired = () => {
 
   return (
     <>
-      <h4 css={css`
-        font-family: "Ringside Regular SSm A", "Ringside Regular SSm B", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: .5rem;
-        letter-spacing: .25rem;
-        text-transform: uppercase;
-        font-weight: 700;
-        min-height: 4rem;
-        margin: 2rem 0;
-        grid-column: 9;
-        grid-row: 8;
-        z-index: 30;
-      `}>Wired</h4>
-
       <div css={css`
         grid-column: 1 / span 12;
         grid-row: 7;
         margin-top: 12rem;
-        margin-left: -20rem;
+        @media (min-width:820px) {
+          margin-left: -20rem;
+        }
       `}>
         <Img fluid={data.image1.sharp.fluid}></Img>
       </div>

@@ -45,7 +45,9 @@ const WorkHPE = () => {
         grid-row: 3;
         z-index: 20;
         padding: 6rem 0 0 0;
-        margin: -2rem;
+        @media (min-width:820px) {
+          margin: -2rem;
+        }
       `}>
         <Img fluid={data.image1.sharp.fluid}></Img>
       </div>
@@ -74,7 +76,9 @@ const WorkHPE = () => {
         grid-column: 1 / span 10;
         grid-row: 5;
         padding: 6rem 0 0 0;
-        margin: -2rem;
+        @media (min-width:820px) {
+          margin: -2rem;
+        }
       `}>
         <Img fluid={data.image4.sharp.fluid}></Img></div>
     </>

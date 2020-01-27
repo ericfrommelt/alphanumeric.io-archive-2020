@@ -9,9 +9,12 @@ const MotionPortfolio = () => {
       grid-template-columns: repeat(12, 1fr);
     `}>
       <h3 css={css`
-        font-size: 8rem;
         grid-column: 1 / span 12;
-        margin: 4rem 0 4rem -4rem;
+        margin: 2rem;
+        @media (min-width:820px) {
+          margin: 4rem 0 4rem -4rem;
+          font-size: 8rem;
+        }
       `}>Motion</h3>
       <div css={css`
         overflow: hidden;
