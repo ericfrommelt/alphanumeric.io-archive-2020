@@ -1,7 +1,6 @@
 import React from "react"
 import { Global, css } from '@emotion/core'
 import Helmet from 'react-helmet'
-import Header from './header'
 import useSiteMetadata from '../hooks/use-sitemetadata'
 
 const Layout = ({ children }) => {
@@ -93,7 +92,6 @@ const Layout = ({ children }) => {
             padding: 2rem;
           `}
           >
-          <Header />
           <div 
             css={css`
               @media (min-width:820px) {
