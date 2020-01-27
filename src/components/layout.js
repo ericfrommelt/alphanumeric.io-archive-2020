@@ -2,6 +2,8 @@ import React from "react"
 import { Global, css } from '@emotion/core'
 import Helmet from 'react-helmet'
 import useSiteMetadata from '../hooks/use-sitemetadata'
+import Nameplate from '../components/nameplate'
+import Info from '../components/info'
 
 const Layout = ({ children }) => {
   const { title, description } = useSiteMetadata();
@@ -92,132 +94,8 @@ const Layout = ({ children }) => {
             padding: 2rem;
           `}
           >
-          <div>
-            <div>
-              <h3
-                css={css`
-                  font-family: "Ringside Regular SSm A", "Ringside Regular SSm B", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                  font-size: .5rem;
-                  letter-spacing: .25rem;
-                  text-transform: uppercase;
-                  font-weight: 700;
-
-                  @media (min-width:820px) {
-                    margin: 45vh 0 .5rem .1rem;
-                  }
-                `}
-              >Eric Frommelt</h3>
-              <h2 
-                css={css`
-                  font-family: "Ringside Regular SSm A", "Ringside Regular SSm B", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                  font-size: 1.4rem;
-                  margin-left: -2px;
-                  margin-top: .6rem;
-                  margin-bottom: 1rem;
-                `}>Designer and UX Engineer
-              </h2>
-              <p css={css`
-                font-size: .8rem;
-                margin-bottom: 2rem;
-              `}>Telling stories at the intersection of design and development.</p>
-            </div>
-
-            <div class="wrap" 
-              css={css`
-              display: grid;
-              grid-template-columns: 10rem auto;
-              `}>
-              <div>
-                <h3
-                  css={css`
-                    font-family: "Ringside Regular SSm A", "Ringside Regular SSm B", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                    font-size: .5rem;
-                    letter-spacing: .25rem;
-                    text-transform: uppercase;
-                    font-weight: 700;
-                    margin-bottom: 1rem;
-                  `}
-                >Skills</h3>
-                <ul
-                  css={css`
-                    list-style-type: none;
-                    padding: 0;
-                    font-size: .7rem;
-                  `}>
-                  <li>UX/UI Design</li>
-                  <li>HTML/CSS/JS</li>
-                  <li>Art Direction</li>
-                  <li>Visual Design</li>
-                  <li>Illustration</li>
-                  <li>Motion Design</li>
-                </ul>
-
-                <h3
-                  css={css`
-                    font-family: "Ringside Regular SSm A", "Ringside Regular SSm B", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                    font-size: .5rem;
-                    letter-spacing: .25rem;
-                    text-transform: uppercase;
-                    font-weight: 700;
-                    margin-top: 2rem;
-                    margin-bottom: 1rem;
-                  `}
-                >Projects</h3>
-                <ul
-                  css={css`
-                    list-style-type: none;
-                    padding: 0;
-                    font-size: .7rem;
-                  `}>
-                  <li><a href="http://www.ericfrommelt.com">ericfrommelt.com</a></li>
-                  <li css={css`
-                    text-decoration: line-through;
-                  `}>scenario74.com</li>
-                </ul>
-              </div>
-
-              <div>
-                <h3
-                  css={css`
-                    font-family: "Ringside Regular SSm A", "Ringside Regular SSm B", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                    font-size: .5rem;
-                    letter-spacing: .25rem;
-                    text-transform: uppercase;
-                    font-weight: 700;
-                    margin-bottom: 1rem;
-                  `}
-                >About this site</h3>
-                <p css={css`
-                  font-size: .7rem;
-                  margin-bottom: 2rem;
-                `}>alphanumeric.io was designed in the browser with Visual Studio Code and the occasional foray into Sketch. Built with Gatsby.</p>
-                <h3
-                  css={css`
-                    font-family: "Ringside Regular SSm A", "Ringside Regular SSm B", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                    font-size: .5rem;
-                    letter-spacing: .25rem;
-                    text-transform: uppercase;
-                    font-weight: 700;
-                    margin-bottom: 1rem;
-                  `}
-                >Learning</h3>
-                <p css={css`
-                  font-size: .7rem;
-                `}>I'm currently focused on:</p>
-                <ul
-                css={css`
-                  list-style-type: none;
-                  padding: 0;
-                  font-size: .7rem;
-                `}>
-                  <li>JavaScript</li>
-                  <li>React</li>
-                  <li>Analog synthesizers</li>
-                  <li>Ableton</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+          <Nameplate />
+          <Info />
         </div>
 
         {/* Right */}
