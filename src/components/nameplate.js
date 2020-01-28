@@ -13,7 +13,7 @@ const Nameplate = () => {
           font-weight: 700;
 
           @media (min-width:820px) {
-            margin: 45vh 0 .5rem .1rem;
+            margin: 35vh 0 .5rem .1rem;
           }
         `}
       >Eric Frommelt</h3>

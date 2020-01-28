@@ -110,7 +110,7 @@ const Layout = ({ children }) => {
           <section
           css={css`
             min-height: 100vh;
-            background: whitesmoke;
+            background: white;
             color: black;
           `}>
           {children}
