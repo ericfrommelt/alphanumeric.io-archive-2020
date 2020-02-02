@@ -52,6 +52,7 @@ const Info = () => {
           `}>
           <li><a href="http://www.ericfrommelt.com">ericfrommelt.com</a></li>
           <li><a href="http://www.runawaydorm.life">Runaway Dorm</a></li>
+          <li><a href="https://github.com/ericfrommelt">Github</a></li>
           <li css={css`
             text-decoration: line-through;
           `}>scenario74.com</li>
