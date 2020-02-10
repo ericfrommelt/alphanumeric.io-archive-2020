@@ -43,7 +43,7 @@ const Info = () => {
             margin-top: 2rem;
             margin-bottom: 1rem;
           `}
-        >Projects</h3>
+        >Projects + Prototypes</h3>
         <ul
           css={css`
             list-style-type: none;
@@ -51,7 +51,6 @@ const Info = () => {
             font-size: .7rem;
           `}>
           <li><a href="http://www.ericfrommelt.com">ericfrommelt.com</a></li>
-          <li><a href="http://www.runawaydorm.life">Runaway Dorm</a></li>
           <li><a href="https://github.com/ericfrommelt">Github</a></li>
           <li css={css`
             text-decoration: line-through;
