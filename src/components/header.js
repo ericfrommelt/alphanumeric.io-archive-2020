@@ -2,7 +2,7 @@ import React from 'react'
 import styled from '@emotion/styled'
 import { css } from '@emotion/core'
 import { Link } from 'gatsby'
-import Masthead from '../components/masthead'
+import MastheadDupe from '../components/masthead-dupe'
 
 const NavLink = styled(Link)`
   font-family: "Ringside Regular SSm A", "Ringside Regular SSm B", sans-serif;
@@ -29,7 +29,7 @@ const Header = () => (
       align-items: center;
     `}
   >
-    {/* <Link to='/'><Masthead></Masthead></Link> */}
+    <Link to='/'><MastheadDupe></MastheadDupe></Link>
   </header>
 )
 

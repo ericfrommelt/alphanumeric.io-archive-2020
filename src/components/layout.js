@@ -2,8 +2,7 @@ import React from "react"
 import { Global, css } from '@emotion/core'
 import Helmet from 'react-helmet'
 import useSiteMetadata from '../hooks/use-sitemetadata'
-import Nameplate from '../components/nameplate'
-import Info from '../components/info'
+import Header from '../components/header'
 
 const Layout = ({ children }) => {
   const { title, description } = useSiteMetadata();
@@ -12,6 +11,14 @@ const Layout = ({ children }) => {
   <>
     <Global 
       styles={css`
+
+            @font-face {
+            font-family: "Founders-Grotesk-Test-Regular";
+            src: url("../fonts/founders-grotesk-test-regular.woff") format("woff");
+            font-weight: normal;
+            font-style: normal;
+          }
+
           * {
             box-sizing: border-box;
             margin: 0;
@@ -81,24 +88,8 @@ const Layout = ({ children }) => {
           overflow-y: hidden;
           position: relative;
         `}
-      >
-        {/* Left */}
-        <div 
-          css={css`
-            @media (min-width:820px) {
-              position: fixed;
-              width: 50vw;
-              height: 100vh;
-            }
-            background: #fff;
-            padding: 2rem;
-          `}
-          >
-          <Nameplate />
-          <Info />
-        </div>
-
-        {/* Right */}
+      >      
+      <Header></Header>  
         <div 
           css={css`
             @media (min-width:820px) {
